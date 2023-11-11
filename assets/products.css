@@ -1,0 +1,179 @@
+/* Style chung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Menu */
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Ảnh sản phẩm */
+.canvapro {
+  display: block;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+/* Danh sách ưu điểm */
+ul.li {
+  padding-left: 20px;
+}
+
+li.p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/*responsive*/
+@media (max-width: 739px) {
+  /* Style mobile */
+  .logom {
+    display: none;
+  }
+  .product {
+    height: 80px;
+    border-radius: 10%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #primary-menu {
+    font-weight: bold;
+    position: relative;
+    top: -2%;
+  }
+  #primary-menu ul {
+    display: flex;
+  }
+  #primary-menu ul li {
+    font-size: 12px;
+    width: 375px;
+    margin-left: 0%;
+    background-image: linear-gradient(to right, #322191, #7f6c93);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  p {
+    position: absolute;
+    top: 20%;
+    font-weight: bold;
+    font-size: 17px;
+    left: -50%;
+    width: 200px;
+  }
+  .infor-text p {
+    display: flex;
+    font-size: 10px;
+    position: relative;
+    top: 70px;
+    left: -40px;
+    width: 300px;
+    text-align: center;
+  }
+
+  li.p {
+    position: relative;
+    padding-left: 10px;
+    font-size: 10px;
+    top: 150px;
+  }
+  .infor-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    border-radius: 5px;
+    width: 120px;
+    top: 100px;
+    left: -42%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Style PC */
+  .canvapro {
+    margin-top: 200px;
+    height: 400px;
+  }
+  .container .product {
+    height: 350px;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .container .canvapro {
+    position: relative;
+    top: -150px;
+    right: 200px;
+    height: 320px;
+  }
+  li.p {
+    position: relative;
+    right: 40%;
+    width: 500px;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(to right, purple, black);
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container ul {
+    margin-top: 20px;
+  }
+  .container li {
+    margin-top: 20px;
+  }
+  .infor {
+    justify-content: space-between;
+  }
+  .infor img {
+    position: relative;
+    border-radius: 10%;
+  }
+  p {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  /*  */
+
+  .infor-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    margin-top: 50px;
+    width: 200px;
+  }
+
+  .infor-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    border-radius: 5px;
+    width: 100px;
+    top: 100px;
+    right: 150px;
+  }
+
+  .infor-text a:hover {
+    background-color: #0056b3;
+  }
+}
